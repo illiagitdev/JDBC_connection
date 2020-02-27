@@ -48,4 +48,15 @@ public class Location implements DataTransferObject {
     public void setStateProvince(String stateProvince) {
         this.stateProvince = stateProvince;
     }
+
+    @Override
+    public String toString() {
+        return "Location{" +
+                "id=" + id +
+                ", streetAddress='" + streetAddress + '\'' +
+                ", postalCode='" + postalCode + '\'' +
+                ", city='" + city + '\'' +
+                ", stateProvince='" + stateProvince + '\'' +
+                '}';
+    }
 }
